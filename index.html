@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRIN Technologies</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .navbar {
+        width: 100%;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 40%;
+      }
+
+      .heading {
+        font-family: poppins;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        /* font-size: 3vw; */
+      }
+      .heading-1 {
+        font-family: poppins;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        padding-bottom: 20px;
+      }
+      .para1 {
+        text-align: center;
+        color: rgb(209, 207, 207);
+        position: relative;
+        /* font-size: 2.5vw; */
+      }
+
+      .courses-sec {
+        background-color: rgb(226, 76, 76);
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .aboutus-sec {
+        background-color: rgb(9, 139, 64);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .contactus-sec {
+        background-color: rgb(9, 44, 139);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav-link {
+        margin-right: 25px;
+        color: black;
+        font-weight: 600;
+      }
+
+      .carousel-item {
+        height: 100vh;
+      }
+
+      @media (min-width: 320px) {
+        .carousel-caption p {
+          font-size: 10px;
+        }
+      }
+      @media (min-width: 320px) {
+        .aboutus-sec .para1 {
+          font-size: 7px;
+        }
+      }
+      @media (min-width: 360px) {
+        .carousel-caption p {
+          font-size: 12px;
+        }
+      }
+
+      @media (min-width: 360px) {
+        .aboutus-sec .para1 {
+          font-size: 9px;
+        }
+      }
+
+      @media (min-width: 414px) {
+        .carousel-caption p {
+          font-size: 15px;
+        }
+      }
+      @media (min-width: 414px) {
+        .aboutus-sec .para1 {
+          font-size: 11px;
+        }
+      }
+      @media (min-width: 360px) {
+        .carousel-caption p {
+          font-size: 12px;
+        }
+      }
+
+      @media (min-width: 360px) {
+        .aboutus-sec .para1 {
+          font-size: 9px;
+        }
+      }
+
+      @media (min-width: 414px) {
+        .carousel-caption p {
+          font-size: 15px;
+        }
+      }
+      @media (min-width: 414px) {
+        .aboutus-sec .para1 {
+          font-size: 11px;
+        }
+      }
+
+      @media (min-width: 640px) {
+        .aboutus-sec .para1 {
+          font-size: 13px;
+        }
+      }
+      @media (min-width: 768px) {
+        .carousel-caption p {
+          font-size: 15px;
+        }
+      }
+      @media (min-width: 768px) {
+        .aboutus-sec .para1 {
+          font-size: 15px;
+        }
+      }
+      @media (min-width: 768px) {
+        .carousel-caption h3 {
+          font-size: 50px;
+          font-weight: 200;
+        }
+      }
+    </style>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <header>
+      <div>
+        <nav
+          class="navbar navbar-expand-sm justify-content-center navbar navbar-light px-4 fixed-top"
+          style="background-color: #e3f2fdaf;"
+        >
+          <a href="#home" class="navbar-brand"
+            ><img src="SRIN Logo design1-16.png" height="40px" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#c1"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="c1">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="#courses" class="nav-link">COURSES</a>
+              </li>
+              <li class="nav-item">
+                <a href="#aboutus" class="nav-link">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contactus" class="nav-link" style="margin-right: 0px;"
+                  >CONTACT US</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="img-slider" id="home">
+        <div id="teja" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li class="active" data-target="#teja" data-slide-to="0"></li>
+            <li class="" data-target="#teja" data-slide-to="1"></li>
+            <li class="" data-target="#teja" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active"
+              style="
+                background-image: url(imgs/111.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+            >
+              <div class="carousel-caption">
+                <h3 class="hero-heading">
+                  Welcome to SRIN Technologies
+                </h3>
+                <p class="hero-text py-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  architecto similique illo expedita tempore porro vero minus
+                  beatae, harum atque qui voluptas repudiandae pariatur eveniet
+                  repellendus asperiores aliquam, aspernatur unde? Minus unde
+                  qui nemo quos eligendi nisi recusandae ad tempora iste labore?
+                  Et ipsam harum aspernatur, a repudiandae obcaecati ut?
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url(imgs/222.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+            >
+              <div class="carousel-caption">
+                <h3 class="hero-heading">We teach CODE</h3>
+                <p class="hero-text py-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Expedita magnam accusantium dolores. Enim qui ullam
+                  recusandae, aspernatur exercitationem veniam nobis similique
+                  impedit iste eaque numquam, aliquid aliquam necessitatibus
+                  accusamus tempore repellat nam fuga odio aperiam quaerat iure
+                  nihil assumenda dolorem. Consequuntur eum libero laudantium
+                  doloribus itaque minima error doloremque quidem?
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url(imgs/333.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+            >
+              <div class="carousel-caption">
+                <h3 class="hero-heading">
+                  Your are taught by Working Professionals
+                </h3>
+                <p class="hero-text py-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium ab harum saepe ad praesentium explicabo quisquam
+                  exercitationem a corrupti illum quo error quod ex provident
+                  quia, ea quae rerum officia. Ipsam rem eaque officiis
+                  doloremque delectus exercitationem, repellat, repellendus
+                  eveniet illo mollitia ab praesentium quasi in. Pariatur sit
+                  quis quae!
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#teja" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#teja" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </section>
+      <section class="courses-sec" id="courses">
+        <div style="width: 100%;">
+          <h1 class="heading-1">Courses</h1>
+          <div class="container collapse-bars">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      HTML 5
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      CSS 3
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Java Script
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingfour">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapsefour"
+                      aria-expanded="false"
+                      aria-controls="collapsefour"
+                    >
+                      Node Js
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapsefour"
+                  class="collapse"
+                  aria-labelledby="headingfour"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutus-sec" id="aboutus">
+        <div>
+          <h1 class="heading-1">About Us</h1>
+          <p class="px-5 para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            aliquam odit dolorem eum nihil, sit enim ratione iusto iste eligendi
+            repudiandae vero maxime harum modi voluptates tempora provident
+            dolores eveniet perferendis. Laudantium laboriosam voluptatem natus
+            officiis, ea culpa rerum! Perspiciatis odio, vero eius corrupti sunt
+            doloremque doloribus quod nostrum natus? Eos omnis laboriosam nisi
+            officiis asperiores magnam, voluptate quisquam ipsam. Iure accusamus
+            eveniet autem recusandae aliquam rerum eius! Culpa et excepturi
+            eligendi cumque voluptatibus quos necessitatibus quia alias
+            assumenda dolorum, delectus fuga magnam omnis nam, perferendis,
+            officia sunt rem aliquam. Ex autem aut reiciendis enim nihil. A
+            pariatur eius possimus cupiditate vero natus maiores voluptatem eum
+            nobis quasi deleniti doloremque dolorum fuga eveniet unde ullam,
+            perspiciatis consectetur, deserunt officia illo, asperiores fugit
+            doloribus. Nihil possimus ratione qui, voluptate necessitatibus ea
+            adipisci cupiditate sunt, laboriosam facere quaerat aliquam
+            perspiciatis. Maxime neque voluptas quisquam molestias, quo ipsam,
+            delectus ipsa quos unde quam sint accusamus optio dolor natus
+            asperiores distinctio nesciunt reprehenderit harum dignissimos
+            mollitia. Laborum labore dicta ipsam tempora. Excepturi unde nam
+            recusandae sit ipsa tempore voluptas ea ab aspernatur, illo, optio
+            ad illum at. Debitis perferendis voluptatum accusamus, odit fugit
+            necessitatibus soluta nesciunt rerum. Officiis vel quos, porro sed
+            ipsum inventore ut illo quo neque iste! Officia odit deserunt
+            laudantium suscipit eaque repudiandae quidem amet, impedit dicta
+            provident, quis sint sapiente similique quam eius laboriosam quos
+            nulla sed aliquid corrupti, voluptatum illo. Molestiae explicabo quo
+            enim. Neque blanditiis fugit facilis, sunt maiores unde est quos
+            delectus magnam consequuntur nihil consequatur eum deserunt eius
+            similique cum dolor animi! Amet eius saepe soluta repellat debitis
+            officiis culpa quia distinctio, ea beatae accusantium quaerat
+            architecto illo rerum sit, non delectus.
+          </p>
+        </div>
+      </section>
+      <section class="contactus-sec" id="contactus">
+        <div>
+          <h1 class="heading-1">Contact Us</h1>
+          <div class="container form-div">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="text-white"
+                  >Full Name
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="text-white"
+                  >Email
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-white-50"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputcontact" class="text-white"
+                  >Contact Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputcontact"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%;"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- <div class="col-2 divider">
+            <div
+              style="
+                height: 455px;
+                background-color: white;
+                width: 2px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+              "
+            ></div>
+          </div>
+          <div class="col-5 px-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15221.199683787143!2d78.4102135!3d17.4931907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd97ce0c82b6794b!2sSri%20Narmada%20IT%20Training!5e0!3m2!1sen!2sin!4v1591916223161!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div> -->
+      </section>
+    </main>
+  </body>
+</html>
